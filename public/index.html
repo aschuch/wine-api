@@ -14,6 +14,7 @@
       }
     </style>
     <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://twitter.github.com/bootstrap/assets/css/docs.css" rel="stylesheet">
   </head>
 
   <body>
@@ -27,42 +28,42 @@
       <h2>Examples</h2>
 
       <h3><code>GET</code> /wines</h3>
-      <p>Get an array of all wines</p>
-      <code>
-        $ curl -i -H "Content-Type: application/json" -H "Accept: application/json" http://localhost:5000/wines
-      </code>
+      <div class="bs-docs-example">
+        <p>Get an array of all wines</p>
+      </div>
+      <pre class="prettyprint">curl -i -H "Content-Type: application/json" -H "Accept: application/json" http://localhost:5000/wines</pre>
 
       <hr>
 
       <h3><code>GET</code> /wines/:id</h3>
-      <p>Get details for a single wine with the given id</p>
-      <code>
-        $ curl -i -H "Content-Type: application/json" -H "Accept: application/json" http://localhost:5000/wines/512df13fb5a3e50000000003
-      </code>
+      <div class="bs-docs-example">
+        <p>Get details for a single wine with the given id</p>
+      </div>
+      <pre class="prettyprint">curl -i -H "Content-Type: application/json" -H "Accept: application/json" http://localhost:5000/wines/512df13fb5a3e50000000003</pre>
 
       <hr>
 
       <h3><code>POST</code> /wines</h3>
-      <p>Create a new wine</p>
-      <code>
-        $ curl -i -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d '{"name": "Merlot", "description": "Good Wine", "rating": 5}' http://localhost:5000/wines
-      </code>
+      <div class="bs-docs-example">
+        <p>Create a new wine</p>
+      </div>
+      <pre class="prettyprint">curl -i -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d '{"name": "Merlot", "description": "Good Wine", "rating": 5}' http://localhost:5000/wines</pre>
 
       <hr>
 
       <h3><code>PUT</code> /wines/:id</h3>
-      <p>Update the wine with the given id</p>
-      <code>
-        $ curl -i -H "Content-Type: application/json" -H "Accept: application/json" -X PUT -d '{"rating":4}' http://localhost:5000/wines/512df13fb5a3e50000000003
-      </code>
+      <div class="bs-docs-example">
+        <p>Update the wine with the given id</p>
+      </div>
+      <pre class="prettyprint">curl -i -H "Content-Type: application/json" -H "Accept: application/json" -X PUT -d '{"rating":4}' http://localhost:5000/wines/512df13fb5a3e50000000003</pre>
 
       <hr>
 
       <h3><code>DELETE</code> /wines/:id</h3>
-      <p>Delete the wine with the given id</p>
-      <code>
-        $ curl -i -H "Content-Type: application/json" -H "Accept: application/json" -X DELETE http://192.168.0.8:5000/wines/512df13fb5a3e50000000003
-      </code>
+      <div class="bs-docs-example">
+        <p>Delete the wine with the given id.</p>
+      </div>
+      <pre class="prettyprint">curl -i -H "Content-Type: application/json" -H "Accept: application/json" -X DELETE http://192.168.0.8:5000/wines/512df13fb5a3e50000000003</pre>
 
     </div> <!-- /container -->
 
