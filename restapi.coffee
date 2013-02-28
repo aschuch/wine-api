@@ -17,6 +17,7 @@ app.configure ->
   app.use express.logger("dev")
   app.use express.methodOverride()
   #app.use express.bodyParser()
+  app.use("/public", express.static(__dirname + '/public'));
   app.use app.router
 
 app.configure "development", ->
